@@ -3,7 +3,7 @@ Thisvrepository named Terminal_Commands, which contains a comprehensive collecti
 ## Table of Contents
 
 - [Git & GitHub](#git--github)
-  +[]()
+  + [Git cheat sheet](#Git-cheat-sheet)
   + [Git Usage](#git-usage)
 - [VSCode](#VSCode)
 - [Anaconda](#anaconda)
@@ -15,7 +15,7 @@ Thisvrepository named Terminal_Commands, which contains a comprehensive collecti
 <head>
 </head>
 <body>
-  <h3>GIT CHEAT SHEET</h3>
+  <h3>Git cheat sheet</h3>
     <h4>SETUP</h4>
   <p>Configuring user information used across all local repositories</p>
   <table>
