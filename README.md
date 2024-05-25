@@ -337,28 +337,28 @@ matches or wildcard globs</td>
   ```
 ## Anaconda
 - **Installing Anaconda**
-   
-   To install Anaconda, follow these steps:
-   
-   Download the Anaconda installer for your operating system from the [official Anaconda distribution page](https://www.anaconda.com/products/distribution).
-   Run the installer and follow the on-screen instructions.
+
+  To install Anaconda, follow these steps:
+
+  Download the Anaconda installer for your operating system from the [official Anaconda distribution page](https://www.anaconda.com/products/distribution).
+  Run the installer and follow the on-screen instructions.
 - **Create a new environment**
 
-   To create a new environment, run the following command:
-   ```bash
-   conda create --name myenv
-   ```
-   Replace myenv with the name you want to give to your environment.
+  To create a new environment, run the following command:
+  ```bash
+  conda create --name myenv
+  ```
+  Replace myenv with the name you want to give to your environment.
 - **Activate an environment**
 
-   To activate an environment, run the following command:
-   ```bash
-   conda activate myenv
-   ```
+  To activate an environment, run the following command:
+  ```bash
+  conda activate myenv
+  ```
 - **Install packages in the environment**
 
-   A YAML environment file is a text file that specifies the packages and dependencies for an environment. To use a YAML environment file, create a file named environment.yml with the following content:
-   ```bash
+  A YAML environment file is a text file that specifies the packages and dependencies for an environment. To use a YAML environment file, create a file named environment.yml with the following content:
+  ```bash
       name: myenv
       dependencies:
          - anaconda
@@ -367,86 +367,87 @@ matches or wildcard globs</td>
       - pip:
          - package1
          - package2
-   ```
-   Replace myenv with the name of your environment, and package1 and package2 with the names of the packages you want to install.
+  ```
+  Replace myenv with the name of your environment, and package1 and package2 with the names of the packages you want to install.
 - **create an environment using the YAML file**
    
-   To create an environment from the YAML file, run the following:
-   ```bash
-   conda env create -f environment.yml
-   ```
+  To create an environment from the YAML file, run the following:
+  ```bash
+  conda env create -f environment.yml
+  ```
 - **Updating an Environment**
-   
-   To update an environment from the YAML file, run:
-   ```bash
-   conda env update -f environment.yml
-   ```
-   To update an environment, run:
-   ```bash
-   conda update --all --name myenv
-   ```
-   Replace myenv with the name of your environment.
+
+  To update an environment from the YAML file, run:
+  ```bash
+  conda env update -f environment.yml
+  ```
+  To update an environment, run:
+  ```bash
+  conda update --all --name myenv
+  ```
+  Replace myenv with the name of your environment.
 - **Viewing a List of Your Environments**
-   
-   To view a list of all your environments, run:
-   ```bash
-   conda env list
-   ```
-   This will display a list of all your environments, along with their names and paths.
+
+  To view a list of all your environments, run:
+  ```bash
+  conda env list
+  ```
+  This will display a list of all your environments, along with their names and paths.
 
 ## Linux Commands
 - **printing working directory**
 
-   To print the path of the working directory, starting from the root
-   ```bash
-   pwd
-   ```
+  To print the path of the working directory, starting from the root
+  ```bash
+  pwd
+  ```
 - **Creating a New Directory**
-   
-   To create a new directory, run the following command:
-   ```bash
-   mkdir [directoryname]
-   ```
+
+  To create a new directory, run the following command:
+  ```bash
+  mkdir [directoryname]
+  ```
 
 - **Changing the Current Directory**
-   
-   To change the current directory, run the following command:
-   ```bash
-   cd [directoryname]
-   ```
-   To change the current directory to parent directory, run the following command:
-   ```bash
-   cd ..
-   ```
-   To change the current directory to root directory, run the following command:
-   ```bash
-   cd .
-   ```
+
+  To change the current directory, run the following command:
+  ```bash
+  cd [directoryname]
+  ```
+  To change the current directory to parent directory, run the following command:
+  ```bash
+  cd ..
+  ```
+  To change the current directory to root directory, run the following command:
+  ```bash
+  cd .
+  ```
 - **Listing the Contents of a Directory**
-   
-   To list the contents of a directory, run the following command:
-   ```
-   ls
-   ```
+
+  To list the contents of a directory, run the following command:
+  ```
+  ls
+  ```
 - **Creating a New File**
 
-   To create a new file, run the following command:
-   ```bash
-   touch [filename]
-   ```
+  To create a new file, run the following command:
+  ```bash
+  touch [filename]
+  ```
 - **editing the file**
 
-   To open and edit a file, run the following command:
-   ```
-   vi [filename]
-   ```
+  To open and edit a file, run the following command:
+  ```
+  vi [filename]
+  ```
 - **Disk uusage**
-   To analyze and report on disk usage within directories and files, execute the following command:
-   ```
-   du [directory/file]
-   ```
+
+  To analyze and report on disk usage within directories and files, execute the following command:
+  ```
+  du [directory/file]
+  ```
 - **Viewing the Contents of a File**
-  
+
   To view the contents of a file, run the following command:
   ```
   cat [filename]
@@ -464,14 +465,13 @@ matches or wildcard globs</td>
   rm -rf [filename]
   ```  
 - **history of executed command**
-  
+
   To view previously executed this command:
     ```
     history
     ```
-    
 - **view date and time**
-  
+
   To view current date and time executed this command:
     ```
     date
@@ -572,20 +572,20 @@ matches or wildcard globs</td>
   ```
   Save your script file.
 
-   Open a terminal and navigate to the directory where your script file is located. Give the script file execute permissions by running the following command:
+  Open a terminal and navigate to the directory where your script file is located. Give the script file execute permissions by running the following command:
 
-   ```bash
-   chmod +x my_script.sh
-   ```
-   Now you can run your script by executing the following command:
+  ```bash
+  chmod +x my_script.sh
+  ```
+  Now you can run your script by executing the following command:
 
-   ```bash
-   ./my_script.sh
-   ```
-   This will execute your script and display the output in your terminal.
+  ```bash
+  ./my_script.sh
+  ```
+  This will execute your script and display the output in your terminal.
 
-   Remember to replace my_script.sh with the actual name of your script file.
-   - EXAMPLE:
+  Remember to replace my_script.sh with the actual name of your script file.
+    - EXAMPLE:
       ```bash
       #!/user/bin/bash
       greeting = "welcome"
