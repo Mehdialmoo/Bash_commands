@@ -454,7 +454,7 @@ matches or wildcard globs</td>
 - **Listing the Contents of a Directory**
 
   To list the contents of a directory, run the following command:
-  ```
+  ```bash
   ls
   ```
 - **Creating a New File**
@@ -466,19 +466,19 @@ matches or wildcard globs</td>
 - **editing the file**
 
   To open and edit a file, run the following command:
-  ```
+  ```bash
   vi [filename]
   ```
 - **Disk uusage**
 
   To analyze and report on disk usage within directories and files, execute the following command:
-  ```
+  ```bash
   du [directory/file]
   ```
 - **Viewing the Contents of a File**
 
   To view the contents of a file, run the following command:
-  ```
+  ```bash
   cat [filename]
   ```
 - **copy file**
@@ -486,13 +486,17 @@ matches or wildcard globs</td>
   To copy a file, run the following command:
   ```
   cp [Source_file] [Destination_file]
+  ```bash
+  To copy a folder, run the following command:
+  ```bash
+  cp -r [Source_folder] [Destination_file]
   ```  
 - **Deleting a File or Directory**
 
   To delete a file or directory, run the following command:
   ```bash
   rm -rf [filename]
-  ```  
+  ``` 
 - **history of executed command**
 
   To view previously executed this command:
