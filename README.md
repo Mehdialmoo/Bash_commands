@@ -526,6 +526,8 @@ matches or wildcard globs</td>
     ```
     date
     ```
+  To view a date manualy use:
+  
 - **view calender**
 
   To view specific month in a year executed this command:
