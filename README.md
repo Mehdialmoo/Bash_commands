@@ -477,6 +477,7 @@ matches or wildcard globs</td>
   ```bash
   vi [filename]
   ```
+  After this press "i" to be able to insert and then press "ESC" to exit inser mode and press "q" to quit and "wq" to write the file and quit.
 - **Disk uusage**
 
   To analyze and report on disk usage within directories and files, execute the following command:
@@ -625,6 +626,20 @@ matches or wildcard globs</td>
 
   ```bash
   chmod +x my_script.sh
+
+  chmod u+rwx my_script.sh
+  .
+  .
+  .
+  ```
+  removing permission
+  ```bash
+  chmod u-w my_script.sh
+
+  chmod u-r my_script.sh
+  .
+  .
+  .
   ```
   Now you can run your script by executing the following command:
 
@@ -643,3 +658,5 @@ matches or wildcard globs</td>
       echo "greeting back $user! Today is $day, which is the best day of the entire week!"
       echo "your bash shell version is $BASH_VERSION. Enjoy!"
       ```
+## REF
+[ss64.com](ss64.com)
