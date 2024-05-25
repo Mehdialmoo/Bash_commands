@@ -209,6 +209,7 @@ matches or wildcard globs</td>
     </tr>
   </table>
 <h3>Git Usage:</h3>
+
 - **Creating a Repository**
 
    To create a new repository on GitHub, go to your profile page and click on the green "New" button.
