@@ -15,7 +15,7 @@ Thisvrepository named Terminal_Commands, which contains a comprehensive collecti
 <head>
 </head>
 <body>
-  <h1>GIT CHEAT SHEET</h1>
+  <h3>GIT CHEAT SHEET</h3>
     <h4>SETUP</h4>
   <p>Configuring user information used across all local repositories</p>
   <table>
