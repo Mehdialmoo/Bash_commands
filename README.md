@@ -34,20 +34,18 @@ Thisvrepository named Terminal_Commands, which contains a comprehensive collecti
 ## Table of Contents
 
 - [Git & GitHub](#git--github)
-  + [Git cheat sheet]()
+  + [Git cheat sheet](Git-cheat-sheet)
   + [Git Usage](#git-usage)
 - [VSCode](#VSCode)
-- [Anaconda]()
+- [Anaconda](#Anaconda)
 - [Linux Commands](#linux-commands)
 - [Bash Files](#Bash-Files)
 
+## Git & GitHub
+### Git cheat sheet:
 <html>
-<head>
-<h1>Git & GitHub</h1>
-</head>
 <body>
-  <h2>Git cheat sheet</h2>
-    <h4>SETUP</h4>
+  <h4>SETUP</h4>
   <p>Configuring user information used across all local repositories</p>
   <table>
     <tr>
@@ -239,7 +237,7 @@ matches or wildcard globs</td>
       <td class="description">discard the changes from top of stash stack</td>
     </tr>
   </table>
-<h2>Git Usage:</h2>
+### Git Usage:
 
 - **Creating a Repository**
 
@@ -350,7 +348,7 @@ matches or wildcard globs</td>
   ```bash
   git log
   ```
-## VSCode
+### VSCode
 
 - **Open VSCode using terminal**
 
@@ -364,7 +362,7 @@ matches or wildcard globs</td>
   ```bash
   code [filename]
   ```
-## Anaconda
+### Anaconda
 - **Installing Anaconda**
 
   To install Anaconda, follow these steps:
@@ -423,7 +421,7 @@ matches or wildcard globs</td>
   ```
   This will display a list of all your environments, along with their names and paths.
 
-## Linux Commands
+### Linux Commands
 - **printing working directory**
 
   To print the path of the working directory, starting from the root
@@ -605,7 +603,7 @@ matches or wildcard globs</td>
   ```
   uptime
   ```
-## Bash Files
+### Bash Files
 - **Creating a Bash File**
   
   To create a bash script file with the .sh extension. For example, "my_script.sh" Add a shebang line at the beginning of the script to specify the interpreter. In this case, we will use bash.
@@ -659,4 +657,4 @@ matches or wildcard globs</td>
       echo "your bash shell version is $BASH_VERSION. Enjoy!"
       ```
 ## REF
-[ss64.com](ss64.com)
+  + [ss64.com](https://ss64.com/)
