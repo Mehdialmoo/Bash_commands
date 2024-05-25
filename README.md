@@ -10,9 +10,8 @@ Thisvrepository named Terminal_Commands, which contains a comprehensive collecti
 - [Linux Commands](#linux-commands)
 - [Bash Files](#Bash-Files)
 
-## Git & GitHub
-
 <html>
+  Git & GitHub
 <head>
 </head>
 <body>
@@ -209,8 +208,7 @@ matches or wildcard globs</td>
       <td class="description">discard the changes from top of stash stack</td>
     </tr>
   </table>
-
-## **Git Usage**:
+<h3>Git Usage:</h3>
 - **Creating a Repository**
 
    To create a new repository on GitHub, go to your profile page and click on the green "New" button.
