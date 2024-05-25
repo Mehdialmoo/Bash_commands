@@ -1,6 +1,4 @@
-# README.md
-
-This README file contains important Linux and GitHub commands that you should know.
+Thisvrepository named Terminal_Commands, which contains a comprehensive collection of terminal commands and instructions for various tasks related to Git, GitHub, VSCode, Anaconda, and Linux commands.
 
 ## Table of Contents
 
