@@ -16,7 +16,7 @@ Thisvrepository named Terminal_Commands, which contains a comprehensive collecti
 </head>
 <body>
   <h1>GIT CHEAT SHEET</h1>
-    <h2>SETUP</h2>
+    <h4>SETUP</h4>
   <p>Configuring user information used across all local repositories</p>
   <table>
     <tr>
@@ -32,7 +32,7 @@ Thisvrepository named Terminal_Commands, which contains a comprehensive collecti
       <td class="description">set automatic command line coloring for Git for easy reviewing</td>
     </tr>
   </table>
-  <h2>SETUP & INIT</h2>
+  <h4>SETUP & INIT</h4>
   <p>Configuring user information, initializing and cloning repositories</p>
   <table>
     <tr>
@@ -44,7 +44,7 @@ Thisvrepository named Terminal_Commands, which contains a comprehensive collecti
       <td class="description">retrieve an entire repository from a hosted location via URL</td>
     </tr>
   </table>
-  <h2>STAGE & SNAPSHOT</h2>
+  <h4>STAGE & SNAPSHOT</h4>
   <p>Working with snapshots and the Git staging area</p>
   <table>
     <tr>
@@ -73,7 +73,7 @@ Thisvrepository named Terminal_Commands, which contains a comprehensive collecti
     </tr>
   </table>
 
-  <h2>BRANCH & MERGE</h2>
+  <h4>BRANCH & MERGE</h4>
   <p>Isolating work in branches, changing context, and integrating changes</p>
   <table>
     <tr>
@@ -97,7 +97,7 @@ Thisvrepository named Terminal_Commands, which contains a comprehensive collecti
       <td class="description">show all commits in the current branch’s history</td>
     </tr>
   </table>
-  <h2>INSPECT & COMPARE</h2>
+  <h4>INSPECT & COMPARE</h4>
   <p>Examining logs, diffs and object information</p>
   <table>
     <tr>
