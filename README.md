@@ -34,19 +34,19 @@ Thisvrepository named Terminal_Commands, which contains a comprehensive collecti
 ## Table of Contents
 
 - [Git & GitHub](#git--github)
-  + [Git cheat sheet](#Git-cheat-sheet)
+  + [Git cheat sheet]()
   + [Git Usage](#git-usage)
 - [VSCode](#VSCode)
-- [Anaconda](#anaconda)
+- [Anaconda]()
 - [Linux Commands](#linux-commands)
 - [Bash Files](#Bash-Files)
 
 <html>
-  Git & GitHub
 <head>
+<h1>Git & GitHub</h1>
 </head>
 <body>
-  <h3>Git cheat sheet</h3>
+  <h2>Git cheat sheet</h2>
     <h4>SETUP</h4>
   <p>Configuring user information used across all local repositories</p>
   <table>
@@ -168,7 +168,7 @@ Thisvrepository named Terminal_Commands, which contains a comprehensive collecti
       <td class="description">show all commit logs with indication of any paths that moved</td>
     </tr>
   </table>
-  <h2>IGNORING PATTERNS</h2>
+  <h4>IGNORING PATTERNS</h4>
   <p>Preventing unintentional staging or commiting of files</p>
   <table>
     <tr>
@@ -207,7 +207,7 @@ matches or wildcard globs</td>
       <td class="description">fetch and merge any commits from the tracking remote branch</td>
     </tr>
   </table>
-  <h2>REWRITE HISTORY</h2>
+  <h4>REWRITE HISTORY</h4>
   <p>Rewriting branches, updating commits and clearing history</p>
   <table>
     <tr>
@@ -239,7 +239,7 @@ matches or wildcard globs</td>
       <td class="description">discard the changes from top of stash stack</td>
     </tr>
   </table>
-<h3>Git Usage:</h3>
+<h2>Git Usage:</h2>
 
 - **Creating a Repository**
 
