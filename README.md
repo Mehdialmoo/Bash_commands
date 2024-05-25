@@ -3,7 +3,8 @@ Thisvrepository named Terminal_Commands, which contains a comprehensive collecti
 ## Table of Contents
 
 - [Git & GitHub](#git--github)
-- [Git Usage](#git-usage)
+  +[]()
+  + [Git Usage](#git-usage)
 - [VSCode](#VSCode)
 - [Anaconda](#anaconda)
 - [Linux Commands](#linux-commands)
@@ -121,7 +122,7 @@ Thisvrepository named Terminal_Commands, which contains a comprehensive collecti
       <td class="description">show any object in Git in human-readable format</td>
     </tr>
   </table>
-  <h2>TRACKING PATH CHANGES</h2>
+  <h4>TRACKING PATH CHANGES</h4>
   <p>Versioning file removes and path changes</p>
   <table>
     <tr>
@@ -152,7 +153,7 @@ matches or wildcard globs</td>
       <td class="description">system wide ignore patern for all local repositories</td>
     </tr>
   </table>
-  <h2>SHARE & UPDATE</h2>
+  <h4>SHARE & UPDATE</h4>
   <p>Retrieving updates from another repository and updating local repos</p>   
   <table>
     <tr>
@@ -188,7 +189,7 @@ matches or wildcard globs</td>
       <td class="description">clear staging area, rewrite working tree from specified commit</td>
     </tr>
   </table>
-  <h2>TEMPORARY COMMITS</h2>
+  <h4>TEMPORARY COMMITS</h4>
   <p>Temporarily store modified, tracked files in order to change branches</p>
   <table>
     <tr>
