@@ -4,136 +4,339 @@ This README file contains important Linux and GitHub commands that you should kn
 
 ## Table of Contents
 
-- [GitHub](#github)
-- [Git](#git)
+- [Git & GitHub](#git--github)
+- [Git Usage](#git-usage)
 - [VSCode](#VSCode)
 - [Anaconda](#)
 - [Linux Commands](#linux-commands)
 - [Bash Files](#Bash-Files)
 
-## GitHub
+## Git & GitHub
 
+<html>
+<head>
+</head>
+<body>
+  <h1>GIT CHEAT SHEET</h1>
+    <h2>SETUP</h2>
+  <p>Configuring user information used across all local repositories</p>
+  <table>
+    <tr>
+      <td class="command">git config --global user.name “[firstname lastname]”</td>
+      <td class="description">set a name that is identifiable for credit when review version history</td>
+    </tr>
+    <tr>
+      <td class="command">git config --global user.email “[valid-email]”</td>
+      <td class="description">set an email address that will be associated with each history marker</td>
+    </tr>
+    <tr>
+      <td class="command">git config --global color.ui auto</td>
+      <td class="description">set automatic command line coloring for Git for easy reviewing</td>
+    </tr>
+  </table>
+  <h2>SETUP & INIT</h2>
+  <p>Configuring user information, initializing and cloning repositories</p>
+  <table>
+    <tr>
+      <td class="command">git init</td>
+      <td class="description">initialize an existing directory as a Git repository</td>
+    </tr>
+    <tr>
+      <td class="command">git clone [url]</td>
+      <td class="description">retrieve an entire repository from a hosted location via URL</td>
+    </tr>
+  </table>
+  <h2>STAGE & SNAPSHOT</h2>
+  <p>Working with snapshots and the Git staging area</p>
+  <table>
+    <tr>
+      <td class="command">git status</td>
+      <td class="description">show modified files in working directory, staged for your next commit</td>
+    </tr>
+    <tr>
+      <td class="command">git add [file]</td>
+      <td class="description">add a file as it looks now to your next commit (stage)</td>
+    </tr>
+    <tr>
+      <td class="command">git reset [file]</td>
+      <td class="description">unstage a file while retaining the changes in working directory</td>
+    </tr>
+    <tr>
+      <td class="command">git diff</td>
+      <td class="description">diff of what is changed but not staged</td>
+    </tr>
+    <tr>
+      <td class="command">git diff --staged</td>
+      <td class="description">diff of what is staged but not yet commited</td>
+    </tr>
+    <tr>
+      <td class="command">git commit -m “[descriptive message]”</td>
+      <td class="description">commit your staged content as a new commit snapshot</td>
+    </tr>
+  </table>
+
+  <h2>BRANCH & MERGE</h2>
+  <p>Isolating work in branches, changing context, and integrating changes</p>
+  <table>
+    <tr>
+      <td class="command">git branch</td>
+      <td class="description">list your branches. a * will appear next to the currently active branch</td>
+    </tr>
+    <tr>
+      <td class="command">git branch [branch-name]</td>
+      <td class="description">create a new branch at the current commit</td>
+    </tr>
+    <tr>
+      <td class="command">git checkout</td>
+      <td class="description">switch to another branch and check it out into your working directory</td>
+    </tr>
+    <tr>
+      <td class="command">git merge [branch]</td>
+      <td class="description">merge the specified branch’s history into the current one</td>
+    </tr>
+    <tr>
+      <td class="command">git log</td>
+      <td class="description">show all commits in the current branch’s history</td>
+    </tr>
+  </table>
+  <h2>INSPECT & COMPARE</h2>
+  <p>Examining logs, diffs and object information</p>
+  <table>
+    <tr>
+      <td class="command">git log</td>
+      <td class="description">show the commit history for the currently active branch</td>
+    </tr>
+    <tr>
+      <td class="command">git log branchB..branchA</td>
+      <td class="description">show the commits on branchA that are not on branchB</td>
+    </tr>
+    <tr>
+      <td class="command">git log --follow [file]</td>
+      <td class="description">show the commits that changed file, even across renames</td>
+    </tr>
+    <tr>
+      <td class="command">git diff branchB...branchA</td>
+      <td class="description">show the diff of what is in branchA that is not in branchB</td>
+    </tr>
+    <tr>
+      <td class="command">git show [SHA]</td>
+      <td class="description">show any object in Git in human-readable format</td>
+    </tr>
+  </table>
+  <h2>TRACKING PATH CHANGES</h2>
+  <p>Versioning file removes and path changes</p>
+  <table>
+    <tr>
+      <td class="command">git rm [file]</td>
+      <td class="description">delete the file from project and stage the removal for commit</td>
+    </tr>
+    <tr>
+      <td class="command">git mv [existing-path] [new-path]</td>
+      <td class="description">change an existing file path and stage the move</td>
+    </tr>
+    <tr>
+      <td class="command">git log --stat -M</td>
+      <td class="description">show all commit logs with indication of any paths that moved</td>
+    </tr>
+  </table>
+  <h2>IGNORING PATTERNS</h2>
+  <p>Preventing unintentional staging or commiting of files</p>
+  <table>
+    <tr>
+      <td class="command">logs/
+*.notes
+pattern*/</td>
+      <td class="description">Save a file with desired paterns as .gitignore with either direct string 
+matches or wildcard globs</td>
+    </tr>
+    <tr>
+      <td class="command">git config --global core.excludesfile [file]</td>
+      <td class="description">system wide ignore patern for all local repositories</td>
+    </tr>
+  </table>
+  <h2>SHARE & UPDATE</h2>
+  <p>Retrieving updates from another repository and updating local repos</p>   
+  <table>
+    <tr>
+      <td class="command">git remote add [alias] [url]</td>
+      <td class="description">add a git URL as an alias</td>
+    </tr>
+    <tr>
+      <td class="command">git fetch [alias]</td>
+      <td class="description">fetch down all the branches from that Git remote</td>
+    </tr>
+    <tr>
+      <td class="command">git merge [alias]/[branch]</td>
+      <td class="description">merge a remote branch into your current branch to bring it up to date</td>
+    </tr>
+    <tr>
+      <td class="command">git push [alias] [branch]</td>
+      <td class="description">Transmit local branch commits to the remote repository branch</td>
+    </tr>
+    <tr>
+      <td class="command">git pull</td>
+      <td class="description">fetch and merge any commits from the tracking remote branch</td>
+    </tr>
+  </table>
+  <h2>REWRITE HISTORY</h2>
+  <p>Rewriting branches, updating commits and clearing history</p>
+  <table>
+    <tr>
+      <td class="command">git rebase [branch]</td>
+      <td class="description">apply any commits of current branch ahead of specified one</td>
+    </tr>
+    <tr>
+      <td class="command">git reset --hard [commit]</td>
+      <td class="description">clear staging area, rewrite working tree from specified commit</td>
+    </tr>
+  </table>
+  <h2>TEMPORARY COMMITS</h2>
+  <p>Temporarily store modified, tracked files in order to change branches</p>
+  <table>
+    <tr>
+      <td class="command">git stash</td>
+      <td class="description">Save modified and staged changes</td>
+    </tr>
+    <tr>
+      <td class="command">git stash list</td>
+      <td class="description">list stack-order of stashed file changes</td>
+    </tr>
+    <tr>
+      <td class="command">git stash pop</td>
+      <td class="description">write working from top of stash stack</td>
+    </tr>
+    <tr>
+      <td class="command">git stash drop</td>
+      <td class="description">discard the changes from top of stash stack</td>
+    </tr>
+  </table>
+
+## **Git Usage**:
 - **Creating a Repository**
- - To create a new repository on GitHub, go to your profile page and click on the green "New" button.
+
+   To create a new repository on GitHub, go to your profile page and click on the green "New" button.
 
 - **set Git configuration**
- - To set up github on the local git, open your terminal or command prompt and run the following commands:
-    ```
-    git config --global user.name “-------”
-    git config --global user.email “------”
-    ```
+   
+   To set up github on the local git, open your terminal or command prompt and run the following commands:
+   ```bash
+   git config --global user.name “-------”
+   git config --global user.email “------”
+   ```
 
 - **set Git configuration**
- - To check your github configuration on the local git, run the following commands:
-    ```
-    git config --list
-    ```
+
+   To check your github configuration on the local git, run the following commands:
+   ```bash
+   git config --list
+   ```
 
 - **Cloning a Repository**
- - To clone a repository, open your terminal or command prompt and run the following command:
-    ```
-    git clone git@github.com:username/repository.git
-    ```
-    
-- **connect to a remote repository on GitHub**
- - Run this git command to connect your local Git repository to a remote repository on GitHub.
+   To clone a repository, open your terminal or command prompt and run the following command:
    ```bash
-    git remote add origin git@github.com:username/repositoryname.git
+   git clone git@github.com:username/repository.git
+   ```
+- **connect to a remote repository on GitHub**
+   
+   Run this git command to connect your local Git repository to a remote repository on GitHub.
+   ```bash
+   git remote add origin git@github.com:username/repositoryname.git
    ```
    
 - **Adding a File to the Repository**
- - To add a file to the repository, first make sure the file is in the correct directory. Then, open your terminal or command prompt and navigate to the directory where the file is located. Finally, run the following command:
-    ```
-    git add "filename"
-    ```
+
+   To add a file to the repository, first make sure the file is in the correct directory. Then, open your terminal or command prompt and navigate to the directory where the file is located. Finally, run the following command:
+   ```bash
+   git add "filename"
+   ```
 - **Removing a File from the Repository**
- - To remove a file from the repository, first make sure the file is in the correct directory. Then, run the following command:
-    ```
-    git rm --cached "filename"
-    ```
+
+   To remove a file from the repository, first make sure the file is in the correct directory. Then, run the following command:
+   ```bash
+   git rm --cached "filename"
+   ```
 - **Commiting Changes**
- - After adding/removing the file, you can commit the changes to the repository with the following command:
-    ```
-    git commit -m "commit message"
-    ```
-
+   
+   After adding/removing the file, you can commit the changes to the repository with the following command:
+   ```bash
+   git commit -m "commit message"
+   ```
 - **Pushing Changes to GitHub**
- - To push the changes to the GitHub repository, run the following command:
-    ```
-    git push origin master
-    ```
-    
+   
+   To push the changes to the GitHub repository, run the following command:
+   ```bash
+   git push origin master
+   ```
 - **Update your repo to the latest changes**
- -  If you already have a local copy of the repository and you want to update it, you can use the git pull command. This command fetches changes from the remote repository and merges them into your local branch.
-    ```
-    git pull origin main
-    ```
-    ```
-    git pull git@github.com:username/repository.git master
-    ```
-    
-## Git
 
+   If you already have a local copy of the repository and you want to update it, you can use the git pull command. This command fetches changes from the remote repository and merges them into your local branch.
+   ```bash
+   git pull origin main
+   ```
+   ```bash
+   git pull git@github.com:username/repository.git master
+   ```
 - **Initializing a new repository**
- - To create a new repository
-    ```
-    git init
-    ```
-    
+
+   To create a new repository
+   ```bash
+   git init
+   ```
 - **Creating a New Branch**
- - To create a new branch, run the following command:
-    ```
-    git checkout -b branchname
-    ```
+
+   To create a new branch, run the following command:
+   ```bash
+   git checkout -b branchname
+   ```
 
 - **Switching Between Branches**
- - To switch between branches, run the following command:
-    ```
-    git checkout branchname
-    ```
-    
-- **current status of your working directory**
- - This command shows you which files have been modified, staged, or deleted and the brach you are currently on. Additionally, it will show you any conflicts that may have arisen during a merge or rebase.
-    ```
-    git status
-    ```
-    
-- **Merging Branches**
- - To merge a branch into the master branch, first switch to the master branch and then run the following command:
-    ```
-    git merge branchname
-    ```
-    ```
-    git merge branchname --no-edit -m "commit message"
-    ```
 
+   To switch between branches, run the following command:
+   ```
+   git checkout branchname
+   ``` 
+- **current status of your working directory**
+   
+   This command shows you which files have been modified, staged, or deleted and the brach you are currently on. Additionally, it will show you any conflicts that may have arisen during a merge or rebase.
+   ```
+   git status
+   ``` 
+- **Merging Branches**
+   
+   To merge a branch into the master branch, first switch to the master branch and then run the following command:
+   ```
+   git merge branchname
+   ```
+   ```
+   git merge branchname --no-edit -m "commit message"
+   ```
 - **Deleting a Branch**
- - To delete a branch, run the following command:
-    ```
-    git branch -d branchname
-    ```
-    
+   
+   To delete a branch, run the following command:
+   ```
+   git branch -d branchname
+   ``` 
 - **view the commit history**
- - This will display a list of all the commits made to the repository, including the author, date, and commit message.
-    ```
-    git log
-    ```
-    
+   
+   This will display a list of all the commits made to the repository, including the author, date, and commit message.
+   ```
+   git log
+   ```
 ## VSCode
 
 - **Open VSCode using terminal**
- - To open VSCode simply write:
-    ```
-    code
-    ```
-    
+   
+   To open VSCode simply write:
+   ```bash
+   code
+   ```
 - **Open a file using VSCode**
- - To open a file using VSCode simply write:
-    ```
-    code [filename]
-    ```
+
+   To open a file using VSCode simply write:
+   ```
+   code [filename]
+   ```
 ## Anaconda
-command:
 - **Installing Anaconda**
    
    To install Anaconda, follow these steps:
@@ -171,26 +374,26 @@ command:
    
    To create an environment from the YAML file, run the following:
    ```bash
-      conda env create -f environment.yml
+   conda env create -f environment.yml
    ```
 - **Updating an Environment**
    
    To update an environment from the YAML file, run:
    ```bash
-      conda env update -f environment.yml
+   conda env update -f environment.yml
    ```
    To update an environment, run:
    ```bash
-      conda update --all --name myenv
+   conda update --all --name myenv
    ```
    Replace myenv with the name of your environment.
 - **Viewing a List of Your Environments**
    
    To view a list of all your environments, run:
    ```bash
-      conda env list
+   conda env list
    ```
-This will display a list of all your environments, along with their names and paths.
+   This will display a list of all your environments, along with their names and paths.
 
 ## Linux Commands
 - **printing working directory**
@@ -202,58 +405,57 @@ This will display a list of all your environments, along with their names and pa
 - **Creating a New Directory**
    
    To create a new directory, run the following command:
-    ```bash
-    mkdir [directoryname]
-    ```
+   ```bash
+   mkdir [directoryname]
+   ```
 
 - **Changing the Current Directory**
    
    To change the current directory, run the following command:
-    ```bash
-    cd [directoryname]
-    ```
+   ```bash
+   cd [directoryname]
+   ```
    To change the current directory to parent directory, run the following command:
    ```bash
-    cd ..
+   cd ..
    ```
- - To change the current directory to root directory, run the following command:
-    ```
-    cd .
-    ```
+   To change the current directory to root directory, run the following command:
+   ```bash
+   cd .
+   ```
 - **Listing the Contents of a Directory**
- - To list the contents of a directory, run the following command:
-    ```
-    ls
-    ```
-
+   
+   To list the contents of a directory, run the following command:
+   ```
+   ls
+   ```
 - **Creating a New File**
- - To create a new file, run the following command:
-    ```
-    touch [filename]
-    ```
-    
+
+   To create a new file, run the following command:
+   ```bash
+   touch [filename]
+   ```
 - **editing the file**
- - To open and edit a file, run the following command:
-    ```
-    vi [filename]
-    ```
-    
+
+   To open and edit a file, run the following command:
+   ```
+   vi [filename]
+   ```
 - **Disk uusage**
- - To analyze and report on disk usage within directories and files, execute the following command:
-    ```
-    du [directory/file]
-    ```
-    
+   To analyze and report on disk usage within directories and files, execute the following command:
+   ```
+   du [directory/file]
+   ```
 - **Viewing the Contents of a File**
- - To view the contents of a file, run the following command:
-    ```
-    cat [filename]
-    ```
+   To view the contents of a file, run the following command:
+   ```
+   cat [filename]
+   ```
 - **copy file**
- - To copy a file, run the following command:
-    ```
-    cp [Source_file] [Destination_file]
-    ```
+   To copy a file, run the following command:
+   ```
+   cp [Source_file] [Destination_file]
+   ```
     
 - **Deleting a File or Directory**
  - To delete a file or directory, run the following command:
@@ -360,27 +562,25 @@ This will display a list of all your environments, along with their names and pa
     ```
  - Save your script file.
 
- - Open a terminal and navigate to the directory where your script file is located.
+   Open a terminal and navigate to the directory where your script file is located. Give the script file execute permissions by running the following command:
 
- - Give the script file execute permissions by running the following command:
-
-    ```bash
-    chmod +x my_script.sh
-    ```
- - Now you can run your script by executing the following command:
-
-    ```bash
-    ./my_script.sh
-    ```
- - This will execute your script and display the output in your terminal.
-
- - Remember to replace my_script.sh with the actual name of your script file.
- - EXAMPLE:
    ```bash
-   #!/user/bin/bash
-   greeting = "welcome"
-   user = $(whoami)
-   day = $(date + %A)
-   echo "greeting back $user! Today is $day, which is the best day of the entire week!"
-   echo "your bash shell version is $BASH_VERSION. Enjoy!"
+   chmod +x my_script.sh
    ```
+   Now you can run your script by executing the following command:
+
+   ```bash
+   ./my_script.sh
+   ```
+   This will execute your script and display the output in your terminal.
+
+   Remember to replace my_script.sh with the actual name of your script file.
+   - EXAMPLE:
+      ```bash
+      #!/user/bin/bash
+      greeting = "welcome"
+      user = $(whoami)
+      day = $(date + %A)
+      echo "greeting back $user! Today is $day, which is the best day of the entire week!"
+      echo "your bash shell version is $BASH_VERSION. Enjoy!"
+      ```
