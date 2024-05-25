@@ -457,6 +457,14 @@ matches or wildcard globs</td>
   ```bash
   ls
   ```
+  To list the contents of a directory in a long listing format, run the following command:
+  ```bash
+  ls -l
+  ```
+  To list the contents including hidden content of a directory, run the following command:
+  ```bash
+  ls -a
+  ```
 - **Creating a New File**
 
   To create a new file, run the following command:
@@ -493,10 +501,18 @@ matches or wildcard globs</td>
   ```  
 - **Deleting a File or Directory**
 
-  To delete a file or directory, run the following command:
+  To delete a file, run the following command:
   ```bash
   rm -rf [filename]
-  ``` 
+  ```
+  To delete a folder, run the following command:
+  ```bash
+  rm -r [foldername]
+  ```
+    To delete a directory, run the following command:
+  ```bash
+  rm  dir [filename]
+  ```
 - **history of executed command**
 
   To view previously executed this command:
@@ -551,7 +567,7 @@ matches or wildcard globs</td>
   
   To extract a zip file, run the following command:
   ```
-  unzip filename.zip
+  unzip [filename.zip]
   ```
 
 - **Compressing a Directory**
@@ -565,14 +581,14 @@ matches or wildcard globs</td>
 
   To move a file or directory, run the following command:
   ```
-  mv filename destination
+  mv [filename] [destination]
   ```
 
 - **Renaming a File or Directory**
   
   To rename a file or directory, run the following command:
   ```
-  mv oldfilename newfilename
+  mv [oldfilename] [newfilename]
   ```
 
 - **Updating the System**
