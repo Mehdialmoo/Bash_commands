@@ -34,12 +34,13 @@ Thisvrepository named Terminal_Commands, which contains a comprehensive collecti
 ## Table of Contents
 
 - [Git & GitHub](#git--github)
-  + [Git cheat sheet](Git-cheat-sheet)
+  + [Git cheat sheet](#git-cheat-sheet)
   + [Git Usage](#git-usage)
-- [VSCode](#VSCode)
-- [Anaconda](#Anaconda)
+- [VSCode](#vscode)
+- [Anaconda](#anaconda)
 - [Linux Commands](#linux-commands)
-- [Bash Files](#Bash-Files)
+- [Bash Files](#bash-files)
+- [References](#references)
 
 ## Git & GitHub
 ### Git cheat sheet:
@@ -237,6 +238,7 @@ matches or wildcard globs</td>
       <td class="description">discard the changes from top of stash stack</td>
     </tr>
   </table>
+
 ### Git Usage:
 
 - **Creating a Repository**
@@ -656,5 +658,5 @@ matches or wildcard globs</td>
       echo "greeting back $user! Today is $day, which is the best day of the entire week!"
       echo "your bash shell version is $BASH_VERSION. Enjoy!"
       ```
-## REF
+## References
   + [ss64.com](https://ss64.com/)
